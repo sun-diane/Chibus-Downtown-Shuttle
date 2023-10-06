@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 import pytz
 
-def save_vehicle_data():
+def get_vehicle_data():
 
     #API call
     url = "https://feeds.transloc.com/3/vehicle_statuses?agencies=100,104&include_arrivals=true" 
@@ -31,6 +31,3 @@ def save_vehicle_data():
         writer.writeheader()    # Writing headers (field names)
         for row in vehicles:      # Writing data rows
             writer.writerow(row)
-    
-save_vehicle_data()
-
