@@ -25,4 +25,4 @@ jobs:
     - name: Run the script
       run: |
         # Run your script here
-        python /main.py
+        python main.py
