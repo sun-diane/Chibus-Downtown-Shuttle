@@ -1,0 +1,4 @@
+id,num_cars,service_status,agency_id,route_id,trip_id,TripStart,TripEnd,gtfs_trip_id,direction,stop_pattern_id,call_name,current_stop_id,next_stop,arrival_status,heading,speed,segment_id,off_route,timestamp,load,apc_status,current_lat,current_long
+8023063,,in_service,100,8006606,12627956,0001-01-01T00:00:00Z,0001-01-01T00:00:00Z,,False,223490,2204,,8149202,Late,88,31.896,8214772,False,13-11-2023 18 05 15,,up,41.8673,-87.63067
+8023071,,in_service,100,8006606,12627996,0001-01-01T00:00:00Z,0001-01-01T00:00:00Z,,False,223490,2208,,8212662,Late,355,6.3,8214772,False,13-11-2023 18 05 15,,up,41.874306,-87.62417
+8023067,,in_service,100,8006606,12627996,0001-01-01T00:00:00Z,0001-01-01T00:00:00Z,,False,223490,2206,,8273950,Early,91,30.492,8214772,False,13-11-2023 18 05 15,,up,41.79504,-87.59251
