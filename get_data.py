@@ -7,9 +7,10 @@ def get_vehicle_data():
 
     #API call
     url = "https://feeds.transloc.com/3/vehicle_statuses?agencies=100,104&include_arrivals=true" 
-    #querystring = {"callback":"call","agencies":"100", "routes":"8006606"} #agency = Uchicago, route = Downtown campus connector
-    querystring = {"callback":"call","agencies":"100", "routes":"8000548"} #agency = Uchicago, route = Central
+    querystring = {"callback":"call","agencies":"100", "routes":"8006606"} #agency = Uchicago, route = Downtown campus connector
+    #querystring = {"callback":"call","agencies":"100", "routes":"8000548"} #agency = Uchicago, route = Central
     response = requests.get(url, params=querystring).json() #json to dictionary
+    print(response)
     
     #create timestamp info
     current_time = datetime.now() #UTC datetime
@@ -17,6 +18,10 @@ def get_vehicle_data():
     timestamp = current_local_time.strftime("%d-%m-%Y %H %M %S") #Format as string
 
     vehicles = [] #intialize list to hold data
+
+    if not response["vehicles"]:
+        print("No vehicles found")
+
 
     for item in response["vehicles"]:
             current_lat, current_long = item.pop("position") #remove position from dictionaty and assign to variables
