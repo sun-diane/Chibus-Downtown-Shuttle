@@ -1,0 +1,2 @@
+id,num_cars,service_status,agency_id,route_id,trip_id,TripStart,TripEnd,gtfs_trip_id,direction,stop_pattern_id,call_name,current_stop_id,next_stop,arrival_status,heading,speed,segment_id,off_route,timestamp,load,apc_status,current_lat,current_long
+8021143,,in_service,100,8000548,12627412,0001-01-01T00:00:00Z,0001-01-01T00:00:00Z,,False,223468,1657,,8173082,Early,94,22.896,8214750,False,23-11-2023 23 03 22,,up,41.79152,-87.58883

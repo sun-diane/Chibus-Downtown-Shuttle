@@ -12,7 +12,12 @@ def main():
     stop_time = cst_timezone.localize(datetime.combine(current_date, datetime.min.time())) 
     stop_time = stop_time.replace(hour=23, minute=00)  #set stop at 11PM on current date
 
-    while True:
+    get_vehicle_data()
+    current_time_cst = datetime.now(cst_timezone) #get current time
+    print("Successfully run at:")
+    print(current_time_cst)
+
+"""     while True:
 
         get_vehicle_data()
         current_time_cst = datetime.now(cst_timezone) #get current time
@@ -24,5 +29,6 @@ def main():
 
         else:
             time.sleep(180) #wait 3 minute
+ """
 
 main()

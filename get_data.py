@@ -7,7 +7,8 @@ def get_vehicle_data():
 
     #API call
     url = "https://feeds.transloc.com/3/vehicle_statuses?agencies=100,104&include_arrivals=true" 
-    querystring = {"callback":"call","agencies":"100", "routes":"8006606"} #agency = Uchicago, route = Downtown campus connector
+    #querystring = {"callback":"call","agencies":"100", "routes":"8006606"} #agency = Uchicago, route = Downtown campus connector
+    querystring = {"callback":"call","agencies":"100", "routes":"8000548"} #agency = Uchicago, route = Central
     response = requests.get(url, params=querystring).json() #json to dictionary
     
     #create timestamp info
